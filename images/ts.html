@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.text-container {
+  position: relative;
+}
+
+.text {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+  </style>
+  <title>Animated Underline</title>
+</head>
+<body>
+  <div class="text-container">
+    <div class="text">Tulisan Anda</div>
+    <div class="underline"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
